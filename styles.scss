@@ -1,3 +1,5 @@
+@import 'anchor';
+
 *,
 :after,
 :before {
@@ -7,7 +9,7 @@
 body {
   background-image: linear-gradient(#615dad, #ffc8da);
   background-repeat: no-repeat;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .intro {
@@ -37,32 +39,5 @@ body {
     margin-bottom: 0;
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.6;
-  }
-
-  &__anchor {
-    display: block;
-    width: 100%;
-    text-decoration: none;
-    color: #ffffff;
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-    padding: 20px;
-  }
-
-  &__anchor--rules {
-    background-color: #1fcca4;
-    border-bottom: 1px solid #283e50;
-  }
-
-  &__anchor--rules:hover {
-    background-color: #1cbb96;
-  }
-
-  &__anchor--play {
-    background-color: #0197f6;
-  }
-
-  &__anchor--play:hover {
-    background-color: #0090e9;
   }
 }

@@ -1,0 +1,26 @@
+.anchor {
+  display: block;
+  width: 100%;
+  text-decoration: none;
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  padding: 20px;
+
+  &--rules {
+    background-color: #1fcca4;
+    border-bottom: 1px solid #283e50;
+  }
+
+  &--rules:hover {
+    background-color: #1cbb96;
+  }
+
+  &--play {
+    background-color: #0197f6;
+  }
+
+  &--play:hover {
+    background-color: #0090e9;
+  }
+}
