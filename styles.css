@@ -5,15 +5,15 @@
   color: #ffffff;
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
-  padding: 20px;
+  padding: 1.3em;
 }
 
-.anchor--rules {
+.anchor--rules, .anchor--intro {
   background-color: #1fcca4;
   border-bottom: 1px solid #283e50;
 }
 
-.anchor--rules:hover {
+.anchor--rules:hover, .anchor--intro:hover {
   background-color: #1cbb96;
 }
 
@@ -23,6 +23,83 @@
 
 .anchor--play:hover {
   background-color: #0090e9;
+}
+
+.intro {
+  width: 22em;
+  margin: 6em auto;
+}
+
+.intro__hero {
+  width: 100%;
+  display: block;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.intro__info {
+  color: #ffffff;
+  background-color: #283e50;
+  text-align: center;
+  padding: 1.3em 0.8em;
+}
+
+.intro__title {
+  margin: 0;
+  font-family: 'Lobster', cursive;
+}
+
+.intro__text {
+  margin-bottom: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+}
+
+.rules {
+  width: 90%;
+  margin: 2.5em auto;
+  background-color: #283e50;
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 5px 5px 0 0;
+}
+
+.rules__title {
+  font-family: "Lobster", cursive;
+  text-align: center;
+  font-size: 2em;
+  margin: 0;
+  padding: 1em;
+}
+
+.rules__list {
+  margin: 0 1.5em 1em 1.5em;
+}
+
+.rules__list-item {
+  padding: 0 1em 0.5em 0.5em;
+}
+
+.rules__img {
+  width: 1em;
+  -webkit-filter: invert(100%);
+          filter: invert(100%);
+  -webkit-transform: translate(0, 2px);
+          transform: translate(0, 2px);
+}
+
+.figure {
+  margin: 1.5em;
+}
+
+.figure__img {
+  max-width: 100%;
+}
+
+.figure__text {
+  font-style: italic;
+  text-align: center;
+  padding: 0.5em 0;
 }
 
 *,
@@ -37,35 +114,6 @@ body {
   background-image: linear-gradient(#615dad, #ffc8da);
   background-repeat: no-repeat;
   min-height: 100vh;
-}
-
-.intro {
-  width: 350px;
-  margin: 100px auto;
-}
-
-.intro__hero {
-  width: 100%;
-  display: block;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-}
-
-.intro__info {
-  color: #ffffff;
-  background-color: #283e50;
-  text-align: center;
-  padding: 20px 10px;
-}
-
-.intro__title {
   margin: 0;
-  font-family: 'Lobster', cursive;
-}
-
-.intro__text {
-  margin-bottom: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  line-height: 1.6;
 }
 /*# sourceMappingURL=styles.css.map */

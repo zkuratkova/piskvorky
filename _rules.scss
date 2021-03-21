@@ -1,0 +1,30 @@
+.rules {
+  width: 90%;
+  margin: 2.5em auto;
+  background-color: $primary-color;
+  color: $secondary-color;
+  font-family: $primary-font;
+  border-radius: 5px 5px 0 0;
+
+  &__title {
+    font-family: $secondary-font;
+    text-align: center;
+    font-size: 2em;
+    margin: 0;
+    padding: 1em;
+  }
+
+  &__list {
+    margin: 0 1.5em 1em 1.5em;
+  }
+
+  &__list-item {
+    padding: 0 1em 0.5em 0.5em;
+  }
+
+  &__img {
+    width: 1em;
+    filter: invert(100%);
+    transform: translate(0, 2px);
+  }
+}
