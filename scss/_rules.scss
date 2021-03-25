@@ -6,6 +6,10 @@
   font-family: $primary-font;
   border-radius: 5px 5px 0 0;
 
+  @media screen and (min-width: 700px) {
+    width: 35em;
+  }
+
   &__title {
     font-family: $secondary-font;
     text-align: center;
