@@ -1,0 +1,53 @@
+.game {
+  max-width: 80vmin;
+  margin: 2.5rem auto;
+  color: #ffffff;
+
+  &__title {
+    font-family: $secondary-font;
+    letter-spacing: 1px;
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 0;
+    padding: 0.5rem;
+  }
+
+  &__text {
+    text-transform: uppercase;
+    font-family: $primary-font;
+    font-weight: bold;
+    display: inline-block;
+  }
+
+  &__img {
+    width: 1rem;
+    transform: translate(0, 2px);
+  }
+
+  &__img--circle {
+    filter: invert(100%);
+  }
+
+  &__button {
+    padding: 0.4rem;
+    border-radius: 3px;
+  }
+
+  &__button--restart {
+    background-color: #0197f6;
+    margin-left: 0.3rem;
+  }
+
+  &__button--restart:hover,
+  &__button--restart:focus {
+    background-color: #0090e9;
+  }
+  &__button--home {
+    background-color: #1fcca4;
+  }
+
+  &__button--home:hover,
+  &__button--home:focus {
+    background-color: #1cbb96;
+  }
+}

@@ -4,24 +4,36 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+      rel="stylesheet"
+    />
     <title>Hra</title>
   </head>
   <body>
     <main class="game">
       <h1 class="game__title">Piškvorky</h1>
-      <p class="game__text">Hraje:</p>
-      <img class="game__img" src="images/circle.svg" alt="kroužek" />
-      <a href="index.html"
-        ><img
-          class="game__img game__img--home"
-          src="images/home.svg"
-          alt="ikona domů" /></a
-      ><a href="hra.html"
-        ><img
-          class="game__img game__img--restart"
-          src="images/restart.svg"
-          alt="ikona opakovat hru"
-      /></a>
+      <div class="container">
+        <div class="container__item">
+          <p class="game__text">Hraje:</p>
+          <img
+            class="game__img game__img--circle"
+            src="images/circle.svg"
+            alt="kroužek"
+          />
+        </div>
+        <div class="container__item">
+          <a class="game__button game__button--home" href="index.html"
+            ><img class="game__img" src="images/home.svg" alt="ikona domů" /></a
+          ><a class="game__button game__button--restart" href="hra.html"
+            ><img
+              class="game__img"
+              src="images/restart.svg"
+              alt="ikona opakovat hru"
+          /></a>
+        </div>
+      </div>
       <div class="field">
         <button class="field__cell"></button
         ><button class="field__cell"></button

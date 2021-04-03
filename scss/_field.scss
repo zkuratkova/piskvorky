@@ -1,0 +1,25 @@
+.field {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+  height: 80vmin;
+
+  &__cell {
+    border-radius: 0;
+    background-color: rgba($color: #ffffff, $alpha: 0.4);
+    border: 1px solid #283e50;
+  }
+
+  &__cell:not(:nth-child(10n)) {
+    border-right: none;
+  }
+
+  &__cell:not(:nth-last-child(-n + 10)) {
+    border-bottom: none;
+  }
+
+  &__cell:hover,
+  &__cell:focus {
+    background-color: rgba($color: #ffffff, $alpha: 0.5);
+  }
+}

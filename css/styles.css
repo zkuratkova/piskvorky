@@ -87,6 +87,7 @@ body {
 
 .rules__title {
   font-family: "Lobster", cursive;
+  letter-spacing: 1px;
   text-align: center;
   font-size: 2em;
   margin: 0;
@@ -142,5 +143,100 @@ body {
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
   }
+}
+
+.game {
+  max-width: 80vmin;
+  margin: 2.5rem auto;
+  color: #ffffff;
+}
+
+.game__title {
+  font-family: "Lobster", cursive;
+  letter-spacing: 1px;
+  text-align: center;
+  font-size: 2.5rem;
+  margin: 0;
+  padding: 0.5rem;
+}
+
+.game__text {
+  text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.game__img {
+  width: 1rem;
+  -webkit-transform: translate(0, 2px);
+          transform: translate(0, 2px);
+}
+
+.game__img--circle {
+  -webkit-filter: invert(100%);
+          filter: invert(100%);
+}
+
+.game__button {
+  padding: 0.4rem;
+  border-radius: 3px;
+}
+
+.game__button--restart {
+  background-color: #0197f6;
+  margin-left: 0.3rem;
+}
+
+.game__button--restart:hover, .game__button--restart:focus {
+  background-color: #0090e9;
+}
+
+.game__button--home {
+  background-color: #1fcca4;
+}
+
+.game__button--home:hover, .game__button--home:focus {
+  background-color: #1cbb96;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.field {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[10];
+      grid-template-columns: repeat(10, 1fr);
+  -ms-grid-rows: (1fr)[10];
+      grid-template-rows: repeat(10, 1fr);
+  height: 80vmin;
+}
+
+.field__cell {
+  border-radius: 0;
+  background-color: rgba(255, 255, 255, 0.4);
+  border: 1px solid #283e50;
+}
+
+.field__cell:not(:nth-child(10n)) {
+  border-right: none;
+}
+
+.field__cell:not(:nth-last-child(-n + 10)) {
+  border-bottom: none;
+}
+
+.field__cell:hover, .field__cell:focus {
+  background-color: rgba(255, 255, 255, 0.5);
 }
 /*# sourceMappingURL=styles.css.map */
