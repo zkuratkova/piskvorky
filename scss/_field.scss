@@ -7,7 +7,20 @@
   &__cell {
     border-radius: 0;
     background-color: rgba($color: #ffffff, $alpha: 0.4);
-    border: 1px solid #283e50;
+    border: 2px solid #283e50;
+    cursor: pointer;
+  }
+
+  &__cell--circle {
+    background: rgba($color: #ffffff, $alpha: 0.4) url(../images/circle.svg)
+      no-repeat center;
+    background-size: 75%;
+  }
+
+  &__cell--cross {
+    background: rgba($color: #ffffff, $alpha: 0.4) url(../images/cross.svg)
+      no-repeat center;
+    background-size: 75%;
   }
 
   &__cell:not(:nth-child(10n)) {

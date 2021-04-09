@@ -225,7 +225,18 @@ body {
 .field__cell {
   border-radius: 0;
   background-color: rgba(255, 255, 255, 0.4);
-  border: 1px solid #283e50;
+  border: 2px solid #283e50;
+  cursor: pointer;
+}
+
+.field__cell--circle {
+  background: rgba(255, 255, 255, 0.4) url(../images/circle.svg) no-repeat center;
+  background-size: 75%;
+}
+
+.field__cell--cross {
+  background: rgba(255, 255, 255, 0.4) url(../images/cross.svg) no-repeat center;
+  background-size: 75%;
 }
 
 .field__cell:not(:nth-child(10n)) {
@@ -238,5 +249,29 @@ body {
 
 .field__cell:hover, .field__cell:focus {
   background-color: rgba(255, 255, 255, 0.5);
+}
+
+.field__cell--circle,
+.field__cell--cross {
+  -webkit-animation: grow 0.3s linear;
+          animation: grow 0.3s linear;
+}
+
+@-webkit-keyframes grow {
+  0% {
+    background-size: 0%;
+  }
+  100% {
+    background-size: 80%;
+  }
+}
+
+@keyframes grow {
+  0% {
+    background-size: 0%;
+  }
+  100% {
+    background-size: 80%;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

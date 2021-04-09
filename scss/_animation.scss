@@ -1,0 +1,13 @@
+.field__cell--circle,
+.field__cell--cross {
+  animation: grow 0.3s linear;
+}
+
+@keyframes grow {
+  0% {
+    background-size: 0%;
+  }
+  100% {
+    background-size: 80%;
+  }
+}
