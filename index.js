@@ -26,6 +26,7 @@ btnElm.forEach((cell) => {
       } else {
         event.target.classList.add('field__cell--cross');
       }
+      event.target.setAttribute('disabled', '');
       switchPlayer();
     }
   });

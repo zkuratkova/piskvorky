@@ -253,8 +253,8 @@ body {
 
 .field__cell--circle,
 .field__cell--cross {
-  -webkit-animation: grow 0.3s linear;
-          animation: grow 0.3s linear;
+  -webkit-animation: grow 0.15s linear;
+          animation: grow 0.15s linear;
 }
 
 @-webkit-keyframes grow {
