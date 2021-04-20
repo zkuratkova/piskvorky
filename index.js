@@ -139,8 +139,21 @@ const isWinningMove = (cell) => {
     return true;
   }
 
-  let inDiagonal = 1;
   let j;
+  let inDiagonalX = 1;
+  /////////////////////////////////////////////////////////////////////////////////////////
+  // diagonála zleva nahoru -- OK
+  j = origin.row;
+  i = origin.column;
+  while (
+    j < fieldSize - 1 &&
+    i > 0 &&
+    symbol === getSymbol(getCell(j + 1, i - 1))
+  ) {
+    inDiagonalX++;
+    j++;
+    i--;
+  }
 
   ////////////////////////////////////////////////////////////////////////////////////////
   // diagonála zprava dolů --- OK
@@ -151,17 +164,22 @@ const isWinningMove = (cell) => {
     i < fieldSize - 1 &&
     symbol === getSymbol(getCell(j - 1, i + 1))
   ) {
-    inDiagonal++;
+    inDiagonalX++;
     i++;
     j--;
   }
 
+  if (inDiagonalX >= symbolsToWin) {
+    return true;
+  }
+
+  let inDiagonalY = 1;
   /////////////////////////////////////////////////////////////////////////////////////////
   // diagonála zleva dolů  --- OK
   j = origin.row;
   i = origin.column;
   while (j > 0 && i > 0 && symbol === getSymbol(getCell(j - 1, i - 1))) {
-    inDiagonal++;
+    inDiagonalY++;
     i--;
     j--;
   }
@@ -175,26 +193,12 @@ const isWinningMove = (cell) => {
     i < fieldSize - 1 &&
     symbol === getSymbol(getCell(j + 1, i + 1))
   ) {
-    inDiagonal++;
+    inDiagonalY++;
     i++;
     j++;
   }
 
-  /////////////////////////////////////////////////////////////////////////////////////////
-  // diagonála zleva nahoru -- OK
-  j = origin.row;
-  i = origin.column;
-  while (
-    j < fieldSize - 1 &&
-    i > 0 &&
-    symbol === getSymbol(getCell(j + 1, i - 1))
-  ) {
-    inDiagonal++;
-    j++;
-    i--;
-  }
-
-  if (inDiagonal >= symbolsToWin) {
+  if (inDiagonalY >= symbolsToWin) {
     return true;
   }
 
