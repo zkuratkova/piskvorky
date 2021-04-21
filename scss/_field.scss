@@ -15,6 +15,7 @@
     background: rgba($color: #ffffff, $alpha: 0.4) url(../images/circle.svg)
       no-repeat center;
     background-size: 75%;
+    background-origin: border-box;
   }
 
   &__cell--cross {

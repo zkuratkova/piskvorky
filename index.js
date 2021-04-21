@@ -31,9 +31,13 @@ btnElm.forEach((cell) => {
       isWinningMove(event.target);
       if (isWinningMove(event.target) === true) {
         if (getSymbol(event.target) === 'circle') {
-          winner('Zvítězilo kolečko. Odveta?');
+          setTimeout(() => {
+            winner('Zvítězilo kolečko. Odveta?');
+          }, 150);
         } else if (getSymbol(event.target) === 'cross') {
-          winner('Zvítězil křížek. Odveta?');
+          setTimeout(() => {
+            winner('Zvítězil křížek. Odveta?');
+          }, 150);
         }
       }
     }

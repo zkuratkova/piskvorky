@@ -232,6 +232,7 @@ body {
 .field__cell--circle {
   background: rgba(255, 255, 255, 0.4) url(../images/circle.svg) no-repeat center;
   background-size: 75%;
+  background-origin: border-box;
 }
 
 .field__cell--cross {
